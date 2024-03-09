@@ -84,9 +84,18 @@ Here is the inference time on Nvidia-2080Ti
 
 - [ ] Issue with HitNet Implementation.
 
+# Acknowledgements
+  Thanks to the authors of fastacv-plus, bgnet, gwcnet, pasmnet, crestereo, hitnet, psmnet and raft-stereo for their opensource code.
+ 
 # References
 - https://github.com/princeton-vl/RAFT-Stereo.git.
 - https://github.com/gangweiX/Fast-ACVNet.
+- https://github.com/3DCVdeveloper/BGNet.
+- https://github.com/megvii-research/CREStereo.
+- https://github.com/ibaiGorordo/HITNET-Stereo-Depth-estimation.
+- https://github.com/xy-guo/GwcNet.
+- https://github.com/JiaRenChang/PSMNet.
+- https://github.com/The-Learning-And-Vision-Atelier-LAVA/PAM/tree/master/PASMnet.
 
 ---
 Reach me @
