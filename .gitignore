@@ -1,0 +1,32 @@
+# Archivos de entorno / dependencias locales
+venv/
+env/
+.venv/
+stereoenv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Archivos de configuración locales
+*.log
+*.tmp
+
+# Datos grandes / resultados
+output/
+wandb/
+*.ckpt
+*.pth
+*.pt
+*.h5
+*.onnx
+*.weights
+*.cfg
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db

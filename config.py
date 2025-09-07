@@ -1,16 +1,16 @@
-KITTI_CALIB_FILES_PATH="/media/satya/740516b2-56c1-4cf3-9ae2-87b56289b807/work/project/segmentation/datasets/kitti_stereo_2015/data_scene_flow_calib/testing/calib_cam_to_cam/*.txt"
-KITTI_LEFT_IMAGES_PATH="/media/satya/740516b2-56c1-4cf3-9ae2-87b56289b807/work/project/segmentation/datasets/kitti_stereo_2015/testing/image_2/*.png"
-KITTI_RIGHT_IMAGES_PATH="/media/satya/740516b2-56c1-4cf3-9ae2-87b56289b807/work/project/segmentation/datasets/kitti_stereo_2015/testing/image_3/*.png"
+KITTI_CALIB_FILES_PATH="/home/sergioperez/Diana/congreso/data_scene_flow_calib/testing/calib_cam_to_cam/*.txt"
+KITTI_LEFT_IMAGES_PATH="/home/sergioperez/Diana/congreso/data_scene_flow/testing/image_2/*.png"
+KITTI_RIGHT_IMAGES_PATH="/home/sergioperez/Diana/congreso/data_scene_flow/testing/image_3/*.png"
 
-RAFT_STEREO_MODEL_PATH = "pretrained_models/raft_stereo/raft-stereo_20000.pth"
-FASTACV_MODEL_PATH = "pretrained_models/fast_acvnet/kitti_2015.ckpt"
-BGNET_PLUS_MODEL_PATH = "pretrained_models/bgnet/kitti_15_BGNet_Plus.pth"
-GWCNET_MODEL_PATH = "pretrained_models/gwcnet/gwcnet_g.ckpt"
-PASMNET_MODEL_PATH = "pretrained_models/pasmnet/PASMnet_192_kitti_epoch5101.pth.tar"
+RAFT_STEREO_MODEL_PATH = "/home/sergioperez/Diana/congreso/pretrained_models/pretrained_models/raft_stereo/raft-stereo_20000.pth"
+FASTACV_MODEL_PATH = "/home/sergioperez/Diana/congreso/pretrained_models/pretrained_models/fast_acvnet/kitti_2015.ckpt"
+BGNET_PLUS_MODEL_PATH = "/home/sergioperez/Diana/congreso/pretrained_models/pretrained_models/bgnet/kitti_15_BGNet_Plus.pth"
+GWCNET_MODEL_PATH = "/home/sergioperez/Diana/congreso/pretrained_models/pretrained_models/gwcnet/gwcnet_g.ckpt"
+PASMNET_MODEL_PATH = "/home/sergioperez/Diana/congreso/pretrained_models/pretrained_models/pasmnet/PASMnet_192_kitti_epoch5101.pth.tar"
+CRESTEREO_MODEL_PATH = "/home/sergioperez/Diana/congreso/pretrained_models/pretrained_models/crestereo/crestereo_eth3d.pth"
+HITNET_MODEL_PATH = "/home/sergioperez/Diana/congreso/pretrained_models/pretrained_models/hitnet/bestD1_checkpoint.ckpt"
+PSMNET_MODEL_PATH = '/home/sergioperez/Diana/congreso/pretrained_models/pretrained_models/psmnet/pretrained_model_KITTI2015.tar'
 
-CRESTEREO_MODEL_PATH = "pretrained_models/crestereo/crestereo_eth3d.pth"
-HITNET_MODEL_PATH = "pretrained_models/hitnet/bestD1_checkpoint.ckpt"
-PSMNET_MODEL_PATH = 'pretrained_models/psmnet/pretrained_model_KITTI2015.tar'
 DEVICE = "cuda:0"
 DEVICE1 = "cuda:1"
 

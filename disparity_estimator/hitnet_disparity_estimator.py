@@ -11,6 +11,7 @@ from ptflops import get_model_complexity_info
 from torchsummary import summary
 from torchstat import stat
 import numpy as np
+np.lib.pad = np.pad
 
 import config
 from networks.HitNet.models import HITNet
@@ -76,9 +77,9 @@ class HitNetEstimator:
         right_pad = 1280 - w
         assert top_pad > 0 and right_pad > 0
         # pad images
-        left_img = np.lib.pad(left_img, ((0, 0), (top_pad, 0), (0, right_pad)), mode='constant', constant_values=0)
-        right_img = np.lib.pad(right_img, ((0, 0), (top_pad, 0), (0, right_pad)), mode='constant',
-                               constant_values=0)
+        left_img = np.pad(left_img, ((0, 0), (top_pad, 0), (0, right_pad)), mode='constant', constant_values=0)
+        right_img = np.pad(right_img, ((0, 0), (top_pad, 0), (0, right_pad)), mode='constant', constant_values=0)
+
         return torch.from_numpy(left_img).unsqueeze(0), torch.from_numpy(right_img).unsqueeze(0)
         """
         imgL = cv2.imread(left_image, cv2.IMREAD_COLOR)
@@ -104,7 +105,7 @@ class HitNetEstimator:
         self.model.eval()
         outputs = self.model(left_img.to(config.DEVICE), right_img.to(config.DEVICE))
         prop_disp_pyramid = outputs['prop_disp_pyramid']
-        print("prop_disp_pyramid: {}".format())
+        print(f"prop_disp_pyramid: {type(prop_disp_pyramid)}, shape={[p.shape for p in prop_disp_pyramid]}")
         return prop_disp_pyramid
 
 if __name__ == "__main__":
